@@ -54,7 +54,8 @@ function pomodoroController() {
         }
         if (el.classList.contains('btn-l-submit')) {
           this.addNumberL()
-          let convert = totalSeconds + extraNumber
+          let convert = 1500 + extraNumber
+          totalSeconds = convert
           let hour = Math.floor(convert / 3600)
           let minutes = Math.floor((convert % 3600) / 60)
           let seconds = convert % 60
@@ -108,7 +109,6 @@ function pomodoroController() {
           this.resumeTimer()
           if (interval !== null) return
           if (intervalBreak !== null) return
-          totalSeconds = totalSeconds + extraNumber
           this.startTimer()
           this.playSound('start')
         }
@@ -117,6 +117,7 @@ function pomodoroController() {
         }
         if (el.classList.contains('input-reset')) {
           this.resetTimer()
+          
         }
       })
     },
@@ -152,7 +153,7 @@ function pomodoroController() {
         let s = seconds.toString().padStart(2, '0')
         let timer = `${h}:${m}:${s}`
         
-        viewerMain.innerText = timer // esse aqui
+        viewerMain.innerText = timer 
       }, 1000)
     },
 
