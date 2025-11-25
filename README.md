@@ -20,23 +20,6 @@ Um timer Pomodoro moderno desenvolvido com **HTML**, **CSS** e **JavaScript** co
 
 ---
 
-## 📦 Estrutura do projeto
-
-pomodoro-clock/
-│
-├── assets/
-│ ├── css/
-│ ├── img/
-│ │ └── favicon/
-│ └── js/
-│
-├── songs/
-│ └── (arquivos de áudio)
-│
-└── index.html
-
-
----
 
 ## 🎯 O que eu aprendi / pratiquei
 
