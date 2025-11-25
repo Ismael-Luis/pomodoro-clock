@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kedebideri:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-color: #FF7979;
+  --secondary-color: #FF5353;
+  --background-color: #fac1c1;
+  --font-color: #ffffff;
+  --details-color: #FF0000;
+  --dark-details-color: #AA0000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  font-family: "Inter", "Montserrat", "Open Sans", sans-serif;
+  height: 90vh;
+  color: var(--font-color)
+}
+
+.container {
+  background-color: var(--primary-color);
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: 
+  "top    top"
+  "left   right"
+  "bottom bottom";
+  font-size: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);;
+}
+
+.title-left {
+  font-size: 25px;
+}
+.title-right {
+  font-size: 25px;
+}
+
+h1{
+  font-size: 50px;
+  grid-area: top;
+}
+
+.timer-main {
+  font-size: 50px;
+  grid-area: bottom;
+  margin: auto;
+  width: 330px;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.timer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  grid-area: left;
+  width: 388px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  grid-area: right;
+  width: 388px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-start, .input-pause, .input-reset {
+  font-size: 20px;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.input-start:hover, .input-pause:hover, .input-reset:hover {
+  background-color: #d6d6d681;
+  cursor: pointer;
+}
+
+.btn-l-up, .btn-l-down{
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+}
+
+.btn-l-up:hover, .btn-l-down:hover{
+  background-color: #c03f3f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-r-up:hover, .btn-r-down:hover{
+  background-color: #c03f3f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-l-submit {
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  font-size: 20px;
+  width: fit-content;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-r-up, .btn-r-down{
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+}
+.btn-r-submit {
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  font-size: 20px;
+  width: fit-content;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-l-submit:hover, .btn-r-submit:hover {
+  background-color: #d6d6d681;
+  cursor: pointer;
+}
+
+body.break-mode {
+  --primary-color: #79A8FF;
+  --secondary-color: #4F8BFF;
+  --background-color: #c1d6fa;
+  --font-color: #ffffff;
+  --details-color: #005BFF;
+  --dark-details-color: #003C99;
+}
+
+body.long-mode {
+  --primary-color: #7FE3A1;
+  --secondary-color: #5BCB82;
+  --background-color: #D3F7E3;
+  --font-color: #ffffff;
+  --details-color: #22A95F;
+  --dark-details-color: #187A45;
+}
